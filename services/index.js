@@ -147,6 +147,15 @@ export const submitComment = async (values) => {
   return result;
 }
 
+export const submitMessage = async (values) => {
+  const result = await fetch('/api/messages',{
+    method: 'POST',
+    headers: {'Content-type':'application/json'},
+    body: JSON.stringify(values),
+  });
+  return result;
+}
+
 export const getComments = async (slug) => {
   const query = gql `
     query GetComments($slug: String!){

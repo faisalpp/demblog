@@ -36,13 +36,25 @@ const FeaturedPosts = () => {
 
   return (
   <div>
-    <Carousel swipeable={false} draggable={false} showDots={true} responsive={responsive} ssr={true} // means to render carousel on server-side.
-        infinite={true} autoPlaySpeed={1000} keyBoardControl={true} customTransition="all .5"
-        transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px">
+    <Carousel 
+      swipeable={false}
+      draggable={false} 
+      showDots={true} 
+      responsive={responsive} 
+      ssr={false} // means to render carousel on server-side.
+      infinite={true} 
+      autoPlaySpeed={1000} 
+      keyBoardControl={true} 
+      customTransition="all .5"
+      transitionDuration={500} 
+      containerClass="carousel-container" 
+      removeArrowOnDeviceType={["tablet", "mobile"]} 
+      dotListClass="custom-dot-list-style" 
+      itemClass="carousel-item-padding-40-px">
      {dataLoaded && featuredPosts.map((post,index) => (
       <FeaturedPostCard key={index} post={post}/>
      ))} 
-    </Carousel>;
+    </Carousel>
   </div>
 )
 }

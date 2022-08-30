@@ -4,7 +4,7 @@ const nextConfig = {
     domains: ['media.graphassets.com'],
   },
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
 };
 
 module.exports = nextConfig

@@ -21,10 +21,10 @@ const Header = () => {
         </Link>
        </div>
         <div className='flex text-sm col-start-6 col-end-8 mt-2 items-center space-x-5 text-white font-bold cursor-pointer'>
-        <h3>Home</h3>
+        <Link href={'/'}><h3>Home</h3></Link>
         <h3 onMouseOver={()=> setIsOpen(!isOpen)} >Categories</h3>
-        <h3>About</h3>
-        <h3>Contact</h3>
+        <Link href={'/About'}><h3>About</h3></Link>
+        <Link href={'/Contact'}><h3>Contact</h3></Link>
         </div>  
      </div>
      <div className='flex flex-row-reverse mr-40 -mt-5 z-10'>

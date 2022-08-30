@@ -12,7 +12,7 @@ const CategoryCard = ({post}) => {
             <p className=' text-black font-sans w-60 h-20 mt-2'>{post.excerpt}</p>
           </div>
           <div className='flex items-center space-x-1 ml-5 text-blue-500 mb-5 hover:text-pink-600 cursor-pointer'>
-            <Link href={`/post/${post.slug}`}><span>Learn More</span></Link><AiOutlineArrowRight/>
+            <Link href={`/post/${post.slug}`}>Learn More</Link><AiOutlineArrowRight/>
           </div>
         </div>
   )
