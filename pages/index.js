@@ -11,8 +11,8 @@ export default function Home({posts}) {
 
   useEffect(()=> {
     window.addEventListener('resize', ()=> {
-        console.log(window.innerHeight, window.innerWidth)
-        setWidth(window.innerWidth)
+        console.log(window.outerHeight, window.outerWidth)
+        setWidth(window.outerWidth)
     })
  }, [])
   return (

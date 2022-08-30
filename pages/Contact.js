@@ -18,7 +18,7 @@ const initialValues = {name: '',email:'',message:''}
 const Messages = () => {
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
-    <Form className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 w-1/2 ml-80 mt-20'>
+    <Form className='bg-white shadow-lg rounded-lg p-8 pb-12 lg:mb-8 lg:w-1/2 lg:ml-80 mt-20 ml-5 mr-5'>
       <h1 className='text-xl mb-8 font-semibold border-b pb-4' >Message</h1>
       <div className='grid grid-col-1 gap-4 mb-4'>
         <Field className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" placeholder='Message' name='message' />
